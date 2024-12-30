@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Penguin-Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- font 2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Faculty+Glyphic&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        header{
+            background-color: #FFFBF0;
+        }
+
+        .nav-bar{
+            display: flex;
+            justify-content: space-between;
+            margin: 0px  137px;
+            margin-top: 10px;
+        }
+        .web-logo{
+            width: 265px;
+        }
+        .nav-ul>a{
+            margin-left: 57px;
+            text-decoration: none;
+            color: #3C3C3C;
+            font-size: 16px;
+            font-weight: 500;
+          
+
+        }
+        .nav-ul>a:hover{
+            margin-top: 5px;
+            border-bottom: 3px solid #A4BC46;
+        }
+        .banner{
+            padding-bottom: 100px;
+            margin-top: 200px;
+            margin: 0px  137px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .banner-title{
+            font-family: "Faculty Glyphic", serif;
+            font-weight: bold;
+            font-style: normal;
+            margin-top: 105px;
+            font-size: 80px;
+            margin-bottom: 4px;
+        
+            text-transform: uppercase;
+        }
+        .button-banner:hover{
+            background: linear-gradient(180deg, #98bd00 0%, #48570c 100%);
+            
+        }
+        .button-banner{
+            font-size: 20px;
+            width: 170px;
+            height: 60px;
+            border-radius: 10px;
+            background: linear-gradient(180deg, #A4BC46 0%, #85A019 100%);
+            border: 0;
+            color: #FFFFFF;
+
+            
+        }
+        .banner-p{
+            margin-top: 4px;
+        }
+        .model-img{
+            margin-top: 20px;
+            margin-right: 80px;
+        }
+        /* W0Man Jacket */
+        .woman-jacket-title{
+            text-transform: uppercase;
+            font-family: "Lato", serif;
+            font-weight: 900;
+            font-style: normal;
+
+        }
+        .section-1{
+            
+            margin: 50px 137px ;
+            
+        }
+        .woman-containar{
+            margin-top: 40px;
+            display: grid;
+            justify-content: space-between;
+            justify-items: center;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .woman-containar>.card{
+            align-items: center;
+            padding: 18px;
+            height: 550px;
+            width: 350px;
+            border-radius: 20px;
+            background: #FFF;
+            box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
+
+        }
+        .woman-containar>div>img{
+            height: 340px;
+            width: 350px;
+            
+        }
+        .price-text{
+            margin-top: 12px;
+            display: inline;
+            color: #FABE4C;
+            font-size: 36px;
+            font-family: "Lato", serif;
+            font-weight: 900;
+            font-style: normal;
+        }
+        .buy-button:hover{
+            background: linear-gradient(180deg, #98bd00 0%, #48570c 100%);
+            
+        }
+        .buy-button{
+            font-size: 20px;
+            width: 170px;
+            margin-left: 80px;
+            height: 60px;
+            border-radius: 10px;
+            background: linear-gradient(180deg, #A4BC46 0%, #85A019 100%);
+            border: 0;
+            color: #FFFFFF;
+            display: inline;
+        }
+        .jacket-title{
+            color: #363958;
+            font-size: 24px;     
+            font-weight: 700;
+          
+        }
+        .section-2{
+            margin: 50px 220px ;
+            display: flex;
+            justify-content: space-between;
+        }
+        .shopping-img{
+            margin-top: 50px;
+            width: 700px;
+            height: 500px;
+        }
+        .last-card>img{
+            width: 70px;
+            height: 70px;
+            
+        }
+        .last-card{
+            padding: 20px;
+            align-items: center;
+            margin-top: 20px;
+            width: 489px;
+            height: 135px;
+            display: flex;
+            border-radius: 20px;
+            background: #FFF;
+            box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
+        }
+        .last-card>div{
+            margin-left: 35px ;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <img class="web-logo" src="icons/logo.png" alt="">
+            <ul class="nav-ul">
+                <a href="">Home</a>
+                <a href="">Product</a>
+                <a href="">About us</a>
+                <a href="">Contac us</a>
+            </ul>
+        </nav>
+        <div class="banner">
+            <div>
+                <h1 class="banner-title"><span style="color:#FABE4C;">Be the Penguins</span> <br>
+                    of Winter</h1>
+                    <p class="banner-p">Lorem Ipsum is simply dummy text of the printing 
+                        and typesetting industry.</p>
+                 <button class="button-banner">BUY NOW</button>   
+            </div>
+          <img class="model-img" src="images/model.png" alt="">  
+
+        </div>
+    </header>
+    <main>
+        <section class="section-1">
+            <h2 class="woman-jacket-title">W0Man Jacket</h2>
+            <div class="woman-containar">
+                <div class="card">
+                    <img src="images/jacket-1.png" alt="">
+                    <h3 class="jacket-title">Yellow Coat Jacket </h3>
+                    <p>Lorem Ipsum is simply dummy text of the 
+                        printing and typesetting industry.</p>
+                    <h2 class="price-text">$234</h2>
+                    <button class="buy-button">BUY NOW</button>
+                </div>
+                <div class="card">
+                    <img src="images/jacket-2.png" alt="">
+                    <h3 class="jacket-title">Ladies Jacket </h3>
+                    <p>Lorem Ipsum is simply dummy text of the 
+                        printing and typesetting industry.</p>
+                    <h2 class="price-text">$234</h2>
+                    <button class="buy-button">BUY NOW</button>
+                </div>
+                <div class="card">
+                    <img src="images/jacket-3.png" alt="">
+                    <h3 class="jacket-title">Woman Leather Jacket </h3>
+                    <p>Lorem Ipsum is simply dummy text of the 
+                        printing and typesetting industry.</p>
+                    <h2 class="price-text">$234</h2>
+                    <button class="buy-button">BUY NOW</button>
+                </div>
+              
+            </div>
+        </section>
+        <!-- man jackets -->
+        <section class="section-1">
+            <h2 class="woman-jacket-title">Man Jacket</h2>
+            <div class="woman-containar">
+                <div class="card">
+                    <img src="images/jacket-4.png" alt="">
+                    <h3 class="jacket-title">Snowboard Jacket Mens </h3>
+                    <p>Lorem Ipsum is simply dummy text of the 
+                        printing and typesetting industry.</p>
+                    <h2 class="price-text">$234</h2>
+                    <button class="buy-button">BUY NOW</button>
+                </div>
+                <div class="card">
+                    <img src="images/jacket-5.png" alt="">
+                    <h3 class="jacket-title">Man Leather Jackets </h3>
+                    <p>Lorem Ipsum is simply dummy text of the 
+                        printing and typesetting industry.</p>
+                    <h2 class="price-text">$234</h2>
+                    <button class="buy-button">BUY NOW</button>
+                </div>
+                <div class="card">
+                    <img src="images/jacket-6.png" alt="">
+                    <h3 class="jacket-title">Man Casual Jackets </h3>
+                    <p>Lorem Ipsum is simply dummy text of the 
+                        printing and typesetting industry.</p>
+                    <h2 class="price-text">$234</h2>
+                    <button class="buy-button">BUY NOW</button>
+                </div>
+              
+            </div>
+        </section>
+
+        <section class="section-2">
+            <div class="last-containar">
+                <div class="last-card">
+                    <img src="icons/house.png" alt="">
+                    <div>  <h2>Find the Perfect Fit</h2>
+                    <p>Everybody is different, which is why we
+                        offer styles for every body.</p></div>
+                </div>
+                <div class="last-card">
+                    <img src="icons/box.png" alt="">
+                         <div> <h2>Free Exchanges</h2>
+                        <p>One of the many reasons you can shop
+                        with peace of mind.</p></div>
+                </div>
+                <div class="last-card">
+                    <img src="icons/question.png" alt="">
+                        <div><h2>Contact Our Seller</h2>
+                        <p>They are here to help you. That's quite 
+                            literally what we pay them for.</p></div>
+                </div>
+            </div>
+            <img class="shopping-img" src="images/shopping.png" alt="">
+        </section>
+        
+    </main>
+    <footer></footer>
+    
+</body>
+</html>
